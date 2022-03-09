@@ -9,9 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.roynaldi19.bfaa01_01activity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
     private lateinit var binding: ActivityMainBinding
-
 
     companion object {
         private const val STATE_RESULT = "state_result"
@@ -21,7 +19,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.btnCalculate.setOnClickListener(this)
 
