@@ -1,12 +1,9 @@
-package com.roynaldi19.bfaa01_01activity
+package com.roynaldi19.dc2_02activity
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.roynaldi19.bfaa01_01activity.databinding.ActivityMainBinding
+import com.roynaldi19.dc2_02activity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding

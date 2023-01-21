@@ -1,4 +1,4 @@
-package com.roynaldi19.bfaa01_01activity
+package com.roynaldi19.dc2_02activity
 
 import org.junit.Test
 
