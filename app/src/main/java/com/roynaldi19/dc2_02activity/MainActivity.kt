@@ -25,11 +25,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putString(STATE_RESULT, binding.tvResult.text.toString())
-    }
-
     override fun onClick(v: View) {
         if (v.id == R.id.btn_calculate) {
             val inputLength = binding.edtLength.text.toString().trim()
@@ -56,5 +51,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 binding.tvResult.text = volume.toString()
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString(STATE_RESULT, binding.tvResult.text.toString())
     }
 }
